@@ -1,0 +1,95 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* General */
+body {
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.opsomming li{
+	list-style: disc;
+	margin-left: 15px;
+}
+
+.auteur {
+	font-size: small;
+	font-weight: lighter;
+	float: right;
+	margin-top: -20px;
+}
+
+em {
+	font-style:normal;
+	font-weight:200;
+	font-variant:small-caps;
+	font-size:1.375em;}
+strong {
+	font-size:1.5em;
+	font-weight:600;
+	font-variant:small-caps;}
+
+dd {
+	margin-left: 0;
+}
+
+#nietzien{
+	color: transparent;
+}
+
+/* navbar */
+.brand-logo>img {
+	float:left;
+	max-height:64px;
+	margin-right:5px;
+	margin-left:5px;
+	border: 3px solid #f1f1f0;
+    border-radius: 327px;
+}
+
+.brand-logo>img:hover {
+	border: 3px solid #a6a7a1; 
+}
+
+.tabs {
+	right: 5px;
+	width:45% !important;
+}
+.tab a {
+	color:white !important;
+}
+
+
+/* homepage */
+.start>img {
+	width: 33%;
+	border: 10px solid #f1f1f0;
+	border-radius: 327px;
+}
+.center .start>img {
+	margin-top: -90px;
+}
+
+.start>img:hover {
+	border: 10px solid #a6a7a1;
+}
+
+
+/* CV */
+#awesomeCloudwordcloud {
+	width: auto;
+	height: 500px;
+}
+
+canvas {
+	line-height: 500px;
+}
+
+.wordcloud {
+	border: 1px solid #036;
+	height: 500px;
+	margin: 0.5em auto;
+	padding: 0;
+	page-break-after: always;
+	page-break-inside: avoid;
+	width: 100%;
+}
