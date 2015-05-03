@@ -54,9 +54,31 @@ dd {
 	right: 5px;
 	width:45% !important;
 }
+@media only screen and (max-width : 992px) {
+    .tabs {
+        right: 7%;
+        width:45% !important;
+    }
+}
+
 .tab a {
 	color:white !important;
 }
+
+@media only screen and (max-width : 992px) {
+    .brand-logo>img {
+        display: none;
+    }
+    nav .brand-logo {
+        left:3px; font-size: 1.6em;
+       -webkit-transform: translateX(0);
+        -moz-transform: translateX(0;
+        -ms-transform: translateX(0;
+        -o-transform: translateX(0;
+        transform: translateX(0; } }
+nav .brand-logo.right {
+    right: 0.5rem;
+    padding: 0; }
 
 
 /* homepage */
