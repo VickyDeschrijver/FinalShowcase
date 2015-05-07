@@ -5,6 +5,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- Fonts & Icons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/manifest.json">
  <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,200,300,700' rel='stylesheet' type='text/css'>
 
 <!-- CSS -->
@@ -39,13 +53,14 @@
             "shape" : "circle"
         }
         $( "#wordcloud" ).awesomeCloud( settings );
+        $('.tooltipped').tooltip({delay: 50});
     })
 
 </script>
 
 
 
-<title>Naamloos document</title>
+    <title>It's All in the Vix.!!!</title>
 </head>
 
 <body>
@@ -57,20 +72,11 @@
                 <a href="#home" class="brand-logo">It's All in the Vix.!!!<img src="img/pic1.gif" /> </a>
                 <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
             <ul class="tabs hide-on-med-and-down right">
-                <li class="tab col s3"><a href="#home" role="tab" data-toggle="tab" ><i class="mdi-action-home"> </i> </a></li>
+                <li class="tab col s3"><a href="#home" role="tab" data-toggle="tab"  class="active"><i class="mdi-action-home"> </i> </a></li>
                 <li class="tab col s3"><a href="#about" role="tab" data-toggle="tab" >About Vix.</a></li>
-                <li class="tab col s3"><a href="#blog" role="tab" data-toggle="tab" >Blog</a></li>
                 <li class="tab col s3"><a href="#resume" role="tab" data-toggle="tab"  >Resume</a></li>
                 <li class="tab col s3"><a href="#portfolio" role="tab" data-toggle="tab"  >Portfolio</a></li>
                 <li class="tab col s3"><a href="#contact" role="tab" data-toggle="tab" class="active" >Contact</a></li>
-            </ul>
-            <ul class="side-nav" id="mobile-demo">
-                <li ><a href="#home" class="active"><i class="mdi-action-home"> </i> </a></li>
-                <li ><a href="#about"  >About Vix.</a></li>
-                <li ><a href="#blog" >Blog</a></li>
-                <li ><a href="#resume" >Resume</a></li>
-                <li ><a href="#portfolio" >Portfolio</a></li>
-                <li ><a href="#contact" >Contact</a></li>
             </ul>
 
             </div>
@@ -81,7 +87,7 @@
     <!-- start tabs -->
     <div class="container">
     <!-- HOME -->
-    <div id="home" class="col s12">
+    <div id="home" class="onder col s12">
 
         <div class="center" id="intro">
             <h1> Front-End Ontwikkelaar</h1>
@@ -100,7 +106,7 @@
     </div>
 
     <!-- ABOUT -->
-    <div id="about" class="col s12">
+    <div id="about" class="onder col s12">
         <div class="section white">
             <div class="row container">
                 <h2 class="header">About Vix.</h2>
@@ -127,11 +133,9 @@
         </div>
     </div>
 
-    <!-- BLOG -->
-    <div id="blog" class="col s12">Test 3</div>
 
     <!-- RESUME -->
-    <div id="resume" class="col s12">
+    <div id="resume" class="onder col s12">
         <div class="section white">
             <div class="row container">
                 <h2 class="header">Curriculum Vitae</h2>
@@ -242,7 +246,7 @@
 
 
     <!-- PORTFOLIO -->
-    <div id="portfolio" class="col s12">
+    <div id="portfolio" class="onder col s12">
         <div class="section white">
             <div class="row container">
                 <h2 class="header">Portfolio</h2>
@@ -322,7 +326,7 @@
     </div>
 
     <!-- CONTACT -->
-    <div id="contact" class="col s12">
+    <div id="contact" class="onder col s12">
         <div class="section white">
             <div class="row container">
                 <h2 class="header">Contact</h2>
@@ -338,13 +342,27 @@
 
         <div class="section white">
             <div class="row container">
-                <p class="grey-text text-darken-3 lighten-3">Na een zoektocht met verschillende werkervaringen, ben ik terecht gekomen op een passie die ik sinds jaren in mij heb. Als Front-end ontwikkelaar zie ik de mogelijkheid om zowel creatief, logisch, opbouwend en als teamplayer aan de slag te gaan. Vanuit vorige werk- en studie-ervaringen neem ik goede bagage mee zoals:
-                <ul class="opsomming">
-                    <li> Zowel zelfstandig als in team te kunnen werken</li>
-                    <li> Planmatig tot resultaten te komen</li>
-                    <li> De zin om continu bij te leren en nieuwe uitdagingen aan te gaan</li>
-                </ul>
-                </p>
+                <div class="col s12 m6 l4 contact-holder">
+                    <h6 class="mdi-action-home">Location</h6>
+                    <p>België, Antwerpen</p>
+                    <h6 class="mdi-communication-email">E-mail</h6>
+                    <a href="mailto:deschrijvervicky@hotmail.com" data-toggle="tooltip" data-placement="top" title="mail me!!" > deschrijvervicky@hotmail.com</a>
+                    <h6 class="mdi-action-open-in-browser">Website</h6>
+                    <a href="#"> http://itsallinthevix.wc.lt</a>
+                </div>
+                <div class="col s12 m6 l8 contact-holder right">
+                    <div class="row center">
+                        <a href="#" class="cont tooltipped"  data-position="left" data-delay="50" data-tooltip="LinkedIn"> <img src="img/linkedin.png"/></a>
+                        <a href="#" class="cont tooltipped"  data-position="top" data-delay="50" data-tooltip="Facebook"> <img src="img/Facebook.png"/></a>
+                        <a href="#" class="cont tooltipped"  data-position="right" data-delay="50" data-tooltip="Twitter"> <img src="img/Twitter.png"/></a>
+                    </div>
+                    <div class="row center op">
+                        <a href="#" class="cont tooltipped"  data-position="bottom" data-delay="50" data-tooltip="Instagram"> <img src="img/instagram.png"/></a>
+                        <a href="#" class="cont tooltipped"  data-position="bottom" data-delay="50" data-tooltip="Pinterest"> <img src="img/Pinterest.png"/></a>
+
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
@@ -352,12 +370,34 @@
     </div>
 
 
-<footer class="page-footer">
-    <div class="container">
-        <p> &copy; It's All in the Vix.!!! 2015 </p>
-        <a class="grey-text text-lighten-4 right" href="mailto:deschrijvervicky@hotmail.com" data-toggle="tooltip" data-placement="top" title="mail me!!" > deschrijvervicky@hotmail.com</a>
-    </div>
+<aside class="contact" id="contact">
 
+    <ul>
+        <li> <a href="mailto:deschrijvervicky@hotmail.com" > <img id="contacticon" src="img/email.png" alt="Stuur een email" class=" tooltipped"  data-position="right" data-delay="50" data-tooltip="deschrijvervicky@hotmail.com" > </a></li>
+        <li> <a href="https://www.linkedin.com/profile/public-profile-settings?trk=prof-edit-edit-public_profile" target="_blank"> <img id="contacticon" src="img/linkedin.png" alt="LinkedIn" class=" tooltipped"  data-position="right" data-delay="50" data-tooltip="LinkedIn"> </a>
+        </li>
+        <li><a href="https://www.facebook.com/VixDeschrijver" target="_blank"> <img id="contacticon" src="img/Facebook.png" alt="Facebook" class=" tooltipped"  data-position="right" data-delay="50" data-tooltip="Facebook"> </a>
+        </li>
+        <li> <a href="https://twitter.com/VixDeschrijver" target="_blank"> <img id="contacticon" src="img/Twitter.png" alt="Twitter" class=" tooltipped"  data-position="right" data-delay="50" data-tooltip="Twitter"> </a>
+        </li>
+        <li> <a href="https://www.linkedin.com/profile/public-profile-settings?trk=prof-edit-edit-public_profile" target="_blank"> <img id="contacticon" src="img/instagram.png" alt="Instagram"  class=" tooltipped"  data-position="right" data-delay="50" data-tooltip="Instagram"> </a>
+        </li>
+        <li> <a href="https://www.pinterest.com/itsallinthevix" target="_blank"> <img id="contacticon" src="img/Pinterest.png" alt="Pinterest"  class=" tooltipped"  data-position="right" data-delay="50" data-tooltip="Pinterest"> </a> </p>
+        </li>
+    </ul>
+
+</aside>
+
+
+
+
+<footer class="page-footer">
+    <!--<div class="footer-copyright">-->
+    <div class="container footer-copyright">
+        &copy; It's All in the Vix.!!! 2015
+        <a class="grey-text text-lighten-4 right" href="mailto:deschrijvervicky@hotmail.com" class=" tooltipped"  data-position="top" data-delay="50" data-tooltip="mail me!!" > deschrijvervicky@hotmail.com</a>
+    </div>
+    <!--</div>-->
 </footer>
 
 
