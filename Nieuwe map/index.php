@@ -1,0 +1,413 @@
+
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Fonts & Icons -->
+ <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,200,300,700' rel='stylesheet' type='text/css'>
+
+<!-- CSS -->
+<link rel="stylesheet" href="css/materialize.min.css">
+<link rel="stylesheet" href="css/style.css">
+
+
+<!-- scripts -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="scripts/js/materialize.min.js"> </script>
+<script src="scripts/js/jquery.awesomeCloud-0.2.js"></script>
+
+
+<script>
+    $( document ).ready(function(){
+        $('ul.tabs').tabs();
+        $(".button-collapse").sideNav();
+        $('.parallax').parallax();
+        var settings = {
+            "size" : {
+                "grid" : 50,
+                "factor":   4,
+                "normalize": false
+            },
+            "options" : {
+                "color" : "random-dark",
+                "printMultiplier" : 3,
+                "rotationRatio":    0.35,
+                "sort": "highest"
+            },
+            "font" : "'Yanone Kaffeesatz', Futura, Helvetica, sans-serif",
+            "shape" : "circle"
+        }
+        $( "#wordcloud" ).awesomeCloud( settings );
+        $('.tooltipped').tooltip({delay: 50});
+        $('.scrollspy').scrollSpy();
+    })
+
+</script>
+
+
+
+<title>Naamloos document</title>
+</head>
+
+<body>
+
+<div class="row">
+    <nav class="col s12">
+        <nav class="pink darken-3">
+            <div class="nav-wrapper">
+                <a href="#home" class="brand-logo">It's All in the Vix.!!!<img src="img/pic1.gif" /> </a>
+
+            <ul class="tabs hide-on-med-and-down right">
+                <li class="tab col s3"><a href="#home" role="tab" data-toggle="tab" class="active"><i class="mdi-action-home"> </i> </a></li>
+                <li class="tab col s3"><a href="#about" role="tab" data-toggle="tab" >About Vix.</a></li>
+                <li class="tab col s3"><a href="#resume" role="tab" data-toggle="tab"  >Resume</a></li>
+                <li class="tab col s3"><a href="#portfolio" role="tab" data-toggle="tab"  >Portfolio</a></li>
+                <li class="tab col s3"><a href="#contact" role="tab" data-toggle="tab"  >Contact</a></li>
+            </ul>
+            </div>
+        </nav>
+    </div>
+
+
+
+
+
+
+    <!-- start tabs -->
+    <div class="container">
+    <!-- HOME -->
+    <div id="home" class="col s12">
+
+        <div class="center" id="intro">
+            <h1> Front-End Ontwikkelaar</h1>
+            <h3> Vix. Deschrijver</h3>
+        </div>
+
+        <div class="row">
+        <a href="#" class="start"> <img src="img/pic1.gif"/></a>
+        <a href="#" class="start"> <img src="img/pic2.gif"/></a>
+        <a href="#" class="start"> <img src="img/pic3.gif"/></a>
+        </div>
+        <div class="row center">
+        <a href="#" class="start"> <img src="img/pic4.gif"/></a>
+        <a href="#" class="start"> <img src="img/pic5.gif"/></a>
+        </div>
+    </div>
+
+    <!-- ABOUT -->
+    <div id="about" class="col s12">
+        <div class="section white">
+            <div class="row container">
+                <h2 class="header">About Vix.</h2>
+                <blockquote class="grey-text text-darken-3 lighten-3 center">"Verspil geen tijd aan het zoeken naar een hindernis. Wellicht is het er niet."</blockquote>
+                <p class="auteur"> Franz Kafka</p>
+            </div>
+        </div>
+
+        <div class="parallax-container">
+            <div class="parallax"><img src="img/startVix.jpg"></div>
+
+        </div>
+
+        <div class="section white">
+            <div class="row container">
+                <p class="grey-text text-darken-3 lighten-3">Na een zoektocht met verschillende werkervaringen, ben ik terecht gekomen op een passie die ik sinds jaren in mij heb. Als Front-end ontwikkelaar zie ik de mogelijkheid om zowel creatief, logisch, opbouwend en als teamplayer aan de slag te gaan. Vanuit vorige werk- en studie-ervaringen neem ik goede bagage mee zoals:
+                    <ul class="opsomming">
+                        <li> Zowel zelfstandig als in team te kunnen werken</li>
+                        <li> Planmatig tot resultaten te komen</li>
+                        <li> De zin om continu bij te leren en nieuwe uitdagingen aan te gaan</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- RESUME -->
+    <div id="resume" class="col s12">
+        <div class="section white">
+            <div class="row container">
+                <h2 class="header">Curriculum Vitae</h2>
+                <blockquote class="grey-text text-darken-3 lighten-3 center">"Geef me werk wat bij me past en ik hoef nooit meer te werken."</blockquote>
+                <p class="auteur"> Confucius</p>
+            </div>
+        </div>
+
+        <div class="parallax-container">
+            <div class="parallax"><img src="img/zee_.jpg"></div>
+
+        </div>
+
+        <div class="section white">
+            <div class="row container" id="cv">
+                <p class="grey-text text-darken-3 lighten-3">
+                <h3> Opleiding </h3>
+                <div> <strong> Front End Ontwikkelaar </strong>	VDAB Oostende	2014 – 2015
+
+                    <div id="wordcloud">
+                    <span data-weight="20"> HTML5</span>
+                        <span data-weight="19"> CSS3</span>
+                        <span data-weight="18"> Responsive Webdesign</span>
+                        <span data-weight="14"> Bootstrap</span>
+                        <span data-weight="14"> LESS</span>
+                        <span data-weight="14"> SASS</span>
+                        <span data-weight="12"> COMPASS</span>
+                        <span data-weight="10"> SQL</span>
+                        <span data-weight="20"> JavaScript</span>
+                        <span data-weight="13"> JSON</span>
+                        <span data-weight="10"> AJAX</span>
+                        <span data-weight="14"> jQuery</span>
+                        <span data-weight="15"> jQuery UI</span>
+                        <span data-weight="12"> jQuery Mobile</span>
+                        <span data-weight="8"> PHP</span>
+                        <span data-weight="7"> Twig</span>
+                        <span data-weight="11"> Scrum</span>
+                        <span data-weight="8"> GIT</span>
+                        <span data-weight="16"> Drupal</span>
+                        <span data-weight="13">  WordPress</span>
+
+
+                    </div>
+
+                    <!--<ul class="opsomming">-->
+                        <!--<li> HTML5 </li>-->
+                        <!--<li> CSS3 </li>-->
+                        <!--<li> Responsive Webdesign</li>-->
+                        <!--<li> Bootstrap </li>-->
+                        <!--<li> LESS</li>-->
+                        <!--<li> SASS</li>-->
+                        <!--<li> COMPASS</li>-->
+                        <!--<li> SQL </li>-->
+                        <!--<li> JavaScript</li>-->
+                        <!--<li> JSON</li>-->
+                        <!--<li> AJAX</li>-->
+                        <!--<li> jQuery </li>-->
+                        <!--<li> jQuery UI</li>-->
+                        <!-&#45;&#45;	jQuery Mobile-->
+                        <!-&#45;&#45;	PHP-->
+                        <!-&#45;&#45;	Twig-->
+                        <!-&#45;&#45;	Scrum-->
+                        <!-&#45;&#45;	GIT-->
+                        <!-&#45;&#45;	Drupal-->
+                        <!-&#45;&#45;	WordPress-->
+
+
+
+                    <!--</ul>-->
+                </div>
+
+                <div> <strong> Sociaal Agogisch Werk </strong>	KDG Hogeschool Antwerpen	2007 – 2010
+                    <p> Diploma: Bachelor Maatschappelijk Assistent  </p></div>
+
+                <div> <strong> CVO Orthopedagogie </strong>	HIK – TNA Volwassenenonderwijs	2005 - 2007
+                    <p> -> Overgestapt naar Bachelor opleiding  </p></div>
+
+                <div> <strong> KSO Toegepaste Beeldende Kunsten </strong>	Sint Lukas Antwerpen (secundair onderwijs)
+                    <ul class="opsomming">
+                        <li> Photoshop </li>
+                        <li> Illustratie Vormgeving</li>
+                        <li> Grafische Vormgeving </li>
+                    </ul> </div>
+
+                <h3> Werkervaring </h3>
+                <div> <strong> Zaal- en barmedewerker </strong>	Bar Cesar 	2014
+                    <p> Taken: onthaal en bediening klanten, onderhoud zaal, receptie hotel (Les Nuits), kassa, bestellingen voorraad… </p> </div>
+
+                <div> <strong> Mede-zaakvoerder </strong>	Theatercafé Mortsel	2013
+                    <p> Taken: Zaalbediening, personeelsbeheer, organisatie evenementen, promotiewerk, bestellingen doen en opvolgen, onderhoud, opstart nieuwe zaak, netwerken (contact leveranciers, klanten…), financiën bijhouden…  </p></div>
+
+                <div> <strong> Trajectbegeleider </strong>	Plus Jobhit	2011 – 2013
+                    <p> Taken: intensieve begeleiding werkzoekenden door individuele gesprekken, sollicitatietraining, screening, contacten en bemiddeling met potentiële werkgevers en jobkanalen, loopbaanoriëntatie…  </p></div>
+
+                <div> <strong> Zaalmedewerker </strong>	Pizza Hut	2008 - 2011
+                    <p> Taken: onthaal en bediening klanten, onderhoud zaal, (suggestieve) verkoop. </p></div>
+
+                <div> <strong> Tijdelijke jobs </strong>		2003 - 2008
+                    <p> Functie’s: Enquêteur (Vlaamse Jeugdraad), Kassa – vestiaire (Café d’Anvers), Verkoopster (Zara, Zoo), Administratief (Vlaams fonds voor de Letteren)</p></div>
+
+            </div>
+                </p>
+            </div>
+        </div>
+
+
+
+
+
+    <!-- PORTFOLIO -->
+    <div id="portfolio" class="col s12">
+        <div class="section white">
+            <div class="row container">
+                <h2 class="header">Portfolio</h2>
+                <blockquote class="grey-text text-darken-3 lighten-3 center">"It is costly wisdom that is bought by experience."</blockquote>
+                <p class="auteur"> Robert Ascham</p>
+            </div>
+        </div>
+
+        <div class="parallax-container">
+            <div class="parallax"><img src="img/zee.jpg"></div>
+
+        </div>
+
+        <div class="section white">
+            <div class="row">
+                <p class="grey-text text-darken-3 lighten-3">Oefeningen, creaties en meer!
+                <div class="row">
+                    <div class="col s12 m4">
+                        <div class="icon-block">
+                            <h5 > School Opdrachten</h5>
+                            <p class="light">
+                            <dl class="opsomming">
+                                <dt> <a href="portfolio/html/Elise%20Models%20-%20flexbox.html" target="_blank"> Elise Models (HTML CSS)</a> </dt>
+                                <dd> Oefening op Flexbox</dd>
+                                <dt> <a href="portfolio/html/webontwikkelaar_wat2.html" target="_blank"> Webontwikkelaar (HTML CSS)</a> </dt>
+                                <dd> Oefening op HTML - CSS</dd>
+                                <dt> <a href="portfolio/html/plantenshop_home.html" target="_blank"> Plantenshop (HTML CSS)</a> </dt>
+                                <dd> Oefening op Responsive Webdesign</dd>
+                                <dt> <a href="portfolio/html/webontwikkelaar_wat.html" target="_blank"> Webontwikkelaar (HTML CSS)</a> </dt>
+                                <dd> Oefening op Bootstrap</dd>
+                                <dt> <a href="portfolio/js/JS_taak_TagCloud.html" target="_blank"> Tag Cloud (Javascript)</a> </dt>
+                                <dd> Oefening op array invoegen, verwerken & uitvoeren</dd>
+                            </dl>
+                        </div>
+                    </div>
+
+                <div class="col s12 m4">
+                    <div class="icon-block">
+                        <h5 id="nietzien"> > </h5>
+                        <p class="light">
+                        <dl class="opsomming">
+                            <dt> <a href="portfolio/js/kalender2.html" target="_blank">Kalender (Javascript)</a> </dt>
+                            <dd> Oefening op gebruik Date, objects en omzetten naar kalender</dd>
+                            <dt> <a href="" target="_blank"> *** </a> </dt>
+                            <dd> uitleg</dd>
+                            <dt> <a href="" target="_blank"> *** </a> </dt>
+                            <dd> uitleg</dd>
+                            <dt> <a href="" target="_blank"> *** </a> </dt>
+                            <dd> uitleg</dd>
+                        </dl>
+                    </div>
+                    </div>
+                    <div class="col s12 m4">
+                        <div class="icon-block">
+                            <h5 > Eigen Opdrachten</h5>
+                            <p class="light">
+                            <dl class="opsomming">
+                                <dt> <a href="" target="_blank"> *** </a> </dt>
+                                <dd> uitleg</dd>
+                                <dt> <a href="" target="_blank"> *** </a> </dt>
+                                <dd> uitleg</dd>
+                                <dt> <a href="" target="_blank"> *** </a> </dt>
+                                <dd> uitleg</dd>
+                            </dl>
+                        </div>
+                </div>
+
+
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- CONTACT -->
+    <div id="contact" class="col s12">
+        <div class="section white">
+            <div class="row container">
+                <h2 class="header">Contact</h2>
+                <blockquote class="grey-text text-darken-3 lighten-3 center">"Om innerlijke rust te vinden, moet je afmaken waaraan je begonnen bent."</blockquote>
+                <p class="auteur"> Boeddha</p>
+            </div>
+        </div>
+
+        <div class="parallax-container">
+            <div class="parallax"><img src="img/antwerp.jpg"></div>
+
+        </div>
+
+        <div class="section white">
+            <div class="row container">
+                <div class="row">
+                    <div class="col s12 m6 l6">
+                        <div class="row">
+                        <?php $thankYou ?>
+                            <form method="post" action="contact.php">
+                                <div class="row">
+                                    <div class="input-field col s6">
+                                        <input id="name" name="cf_name" type="text" class="validate">
+                                        <label for="name">Naam</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <input id="email" name="cf_email" type="email" class="validate">
+                                        <label for="email">E-Mail</label>
+                                    </div>
+                                </div>
+                                <textarea class="materialize-textarea" placeholder="Your Message" name="cf_message" required></textarea>
+                                <button class="btn waves-effect waves-light" type="submit" name="submit" >Submit
+                                    <i class="mdi-content-send right"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col s12 m6 l6 contact-holder">
+                        <h6 class="mdi-action-home">Location</h6>
+                        <p>België, Antwerpen</p>
+                        <h6 class="mdi-communication-email">E-mail</h6>
+                        <a href="mailto:deschrijvervicky@hotmail.com" data-toggle="tooltip" data-placement="top" title="mail me!!" > deschrijvervicky@hotmail.com</a>
+                        <h6 class="mdi-action-open-in-browser">Website</h6>
+                        <a href="#"> http://itsallinthevix.wc.lt</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    </div>
+
+<aside class="contact" id="contact">
+
+    <ul>
+        <li> <a href="mailto:deschrijvervicky@hotmail.com" > <img id="contacticon" src="img/email.png" alt="Stuur een email" class="btn tooltipped"  data-position="right" data-delay="50" data-tooltip="deschrijvervicky@hotmail.com" > </a></li>
+        <li> <a href="https://www.linkedin.com/profile/public-profile-settings?trk=prof-edit-edit-public_profile" target="_blank"> <img id="contacticon" src="img/linkedin.png" alt="LinkedIn" class="btn tooltipped"  data-position="right" data-delay="50" data-tooltip="LinkedIn"> </a>
+        </li>
+        <li><a href="https://www.facebook.com/VixDeschrijver" target="_blank"> <img id="contacticon" src="img/facebook.png" alt="Facebook" class="btn tooltipped"  data-position="right" data-delay="50" data-tooltip="Facebook"> </a>
+        </li>
+        <li> <a href="https://twitter.com/VixDeschrijver" target="_blank"> <img id="contacticon" src="img/twitter.png" alt="Twitter" class="btn tooltipped"  data-position="right" data-delay="50" data-tooltip="Twitter"> </a>
+        </li>
+        <li> <a href="https://www.linkedin.com/profile/public-profile-settings?trk=prof-edit-edit-public_profile" target="_blank"> <img id="contacticon" src="img/instagram.png" alt="Instagram"  class="btn tooltipped"  data-position="right" data-delay="50" data-tooltip="Instagram"> </a>
+        </li>
+        <li> <a href="https://www.pinterest.com/itsallinthevix" target="_blank"> <img id="contacticon" src="img/pinterest.png" alt="Pinterest"  class="btn tooltipped"  data-position="right" data-delay="50" data-tooltip="Pinterest"> </a> </p>
+        </li>
+    </ul>
+
+</aside>
+
+
+
+
+<footer class="page-footer">
+    <div class="container">
+        <p> &copy; It's All in the Vix.!!! 2015 </p>
+        <a class="grey-text text-lighten-4 right" href="mailto:deschrijvervicky@hotmail.com" data-toggle="tooltip" data-placement="top" title="mail me!!" > deschrijvervicky@hotmail.com</a>
+    </div>
+
+</footer>
+
+
+
+
+
+
+</body>
+</html>
