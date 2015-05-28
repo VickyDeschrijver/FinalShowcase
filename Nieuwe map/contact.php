@@ -19,14 +19,14 @@ $mail_status = mail($mail_to, $subject, $body_message, $headers);
 
 if ($mail_status) { ?>
 	<script language="javascript" type="text/javascript">
-		alert('Bedankt voor je berichtje, u mag snel een antwoord verwachten');
+		alert('Thank you for the message. We will contact you shortly.');
 		window.location = 'index.php';
 	</script>
 <?php
 }
 else { ?>
 	<script language="javascript" type="text/javascript">
-		alert('Oeps, je bericht kan niet worden verzonden. U kan me steeds contacteren via deschrijvervicky@hotmail.com');
+		alert('Message failed. Please, send an email to gordon@template-help.com');
 		window.location = 'index.php';
 	</script>
 <?php

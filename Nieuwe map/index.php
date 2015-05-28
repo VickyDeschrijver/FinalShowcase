@@ -7,34 +7,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- Fonts & Icons -->
-    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="img/favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="theme-color" content="#ffffff">
  <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,200,300,700' rel='stylesheet' type='text/css'>
 
-
 <!-- CSS -->
-<link rel="stylesheet" href="css/materialize.min.css" media="screen">
-<link rel="stylesheet" href="css/style.css" media="screen">
-<link rel="stylesheet" href="css/print.css" type="text/css" media="print"/>
+<link rel="stylesheet" href="css/materialize.min.css">
+<link rel="stylesheet" href="css/style.css">
 
 
 <!-- scripts -->
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script src="scripts/js/materialize.js"> </script>
+<script src="scripts/js/materialize.min.js"> </script>
 <script src="scripts/js/jquery.awesomeCloud-0.2.js"></script>
 
 
@@ -43,69 +25,61 @@
         $('ul.tabs').tabs();
         $(".button-collapse").sideNav();
         $('.parallax').parallax();
-
-        $( "#wordcloud" ).awesomeCloud( {
+        var settings = {
             "size" : {
-                "grid" : 16,
+                "grid" : 50,
+                "factor":   4,
                 "normalize": false
             },
             "options" : {
                 "color" : "random-dark",
                 "printMultiplier" : 3,
                 "rotationRatio":    0.35,
-                "sort": "random"
+                "sort": "highest"
             },
             "font" : "'Yanone Kaffeesatz', Futura, Helvetica, sans-serif",
-            "shape" : "square"
-        } );
+            "shape" : "circle"
+        }
+        $( "#wordcloud" ).awesomeCloud( settings );
         $('.tooltipped').tooltip({delay: 50});
+        $('.scrollspy').scrollSpy();
     })
 
 </script>
 
 
-    <title>It's All in the Vix.!!!</title>
+
+<title>Naamloos document</title>
 </head>
 
 <body>
-
-<!-- PrintKnop --> 
-    <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
-                <a class="btn-floating btn-large pink darken-3 tooltipped" data-position="left" data-delay="50" data-tooltip="print / download">
-                  <i class="large mdi-editor-mode-edit"></i>
-                </a>
-                <ul>
-                  
-                  <li><a class="btn-floating pink darken-1 tooltipped" data-position="left" data-delay="50" data-tooltip="download PDF" href="CV-Vicky-Deschrijver-2015.pdf"><i class="large mdi-file-file-download" ></i></a></li>
-                  <li><a class="btn-floating pink darken-2 tooltipped" data-position="left" data-delay="50" data-tooltip="print"><i class="large mdi-action-print" onClick="window.print()"></i></a></li>
-                </ul>
-              </div>
 
 <div class="row">
     <nav class="col s12">
         <nav class="pink darken-3">
             <div class="nav-wrapper">
                 <a href="#home" class="brand-logo">It's All in the Vix.!!!<img src="img/pic1.gif" /> </a>
-               
-            <ul id="menu" class="tabs hide-on-small-and-down right">
-                <li class="tab col s3"><a href="#home" role="tab" data-toggle="tab"  class="active"><i class="mdi-action-home"> </i> </a></li>
+
+            <ul class="tabs hide-on-med-and-down right">
+                <li class="tab col s3"><a href="#home" role="tab" data-toggle="tab" class="active"><i class="mdi-action-home"> </i> </a></li>
                 <li class="tab col s3"><a href="#about" role="tab" data-toggle="tab" >About Vix.</a></li>
                 <li class="tab col s3"><a href="#resume" role="tab" data-toggle="tab"  >Resume</a></li>
                 <li class="tab col s3"><a href="#portfolio" role="tab" data-toggle="tab"  >Portfolio</a></li>
-                <li class="tab col s3"><a href="#contact" role="tab" data-toggle="tab" class="active" >Contact</a></li>
+                <li class="tab col s3"><a href="#contact" role="tab" data-toggle="tab"  >Contact</a></li>
             </ul>
-
             </div>
         </nav>
     </div>
 
-<!-- start tabs -->
+
+
+
+
+
+    <!-- start tabs -->
     <div class="container">
-    
-              
-              
     <!-- HOME -->
-    <div id="home" class="onder col s12">
+    <div id="home" class="col s12">
 
         <div class="center" id="intro">
             <h1> Front-End Ontwikkelaar</h1>
@@ -113,18 +87,18 @@
         </div>
 
         <div class="row">
-        <a  class="start"> <img class="responsive-img" src="img/pic1.gif"/></a>
-        <a  class="start"> <img class="responsive-img" src="img/pic2.gif"/></a>
-        <a  class="start"> <img class="responsive-img" src="img/pic3.gif"/></a>
+        <a href="#" class="start"> <img src="img/pic1.gif"/></a>
+        <a href="#" class="start"> <img src="img/pic2.gif"/></a>
+        <a href="#" class="start"> <img src="img/pic3.gif"/></a>
         </div>
         <div class="row center">
-        <a  class="start"> <img class="responsive-img" src="img/pic4.gif"/></a>
-        <a  class="start"> <img class="responsive-img" src="img/pic5.gif"/></a>
+        <a href="#" class="start"> <img src="img/pic4.gif"/></a>
+        <a href="#" class="start"> <img src="img/pic5.gif"/></a>
         </div>
     </div>
 
     <!-- ABOUT -->
-    <div id="about" class="onder col s12">
+    <div id="about" class="col s12">
         <div class="section white">
             <div class="row container">
                 <h2 class="header">About Vix.</h2>
@@ -153,15 +127,13 @@
 
 
     <!-- RESUME -->
-    <div id="resume" class="onder col s12">
-    
+    <div id="resume" class="col s12">
         <div class="section white">
             <div class="row container">
-                <h2 class="header" id="cv">Curriculum Vitae</h2>
+                <h2 class="header">Curriculum Vitae</h2>
                 <blockquote class="grey-text text-darken-3 lighten-3 center">"Geef me werk wat bij me past en ik hoef nooit meer te werken."</blockquote>
                 <p class="auteur"> Confucius</p>
             </div>
-            
         </div>
 
         <div class="parallax-container">
@@ -175,8 +147,8 @@
                 <h3> Opleiding </h3>
                 <div> <strong> Front End Ontwikkelaar </strong>	VDAB Oostende	2014 – 2015
 
-                    <div class="hide-on-small-and-down" id="wordcloud" style="height:450px;width:700px;left:0;top:0;">
-                    <span  data-weight="20"> HTML5</span>
+                    <div id="wordcloud">
+                    <span data-weight="20"> HTML5</span>
                         <span data-weight="19"> CSS3</span>
                         <span data-weight="18"> Responsive Webdesign</span>
                         <span data-weight="14"> Bootstrap</span>
@@ -196,30 +168,31 @@
                         <span data-weight="8"> GIT</span>
                         <span data-weight="16"> Drupal</span>
                         <span data-weight="13">  WordPress</span>
+
+
                     </div>
 
-                    <ul class="opsomming show-on-small hide-on-med-and-up">
-                        <li> HTML5 </li>
-                        <li> CSS3 </li>
-                        <li> Responsive Webdesign</li>
-                        <li> Bootstrap </li>
-                        <li> LESS</li>
-                        <li> SASS</li>
-                        <li> COMPASS</li>
-                        <li> SQL </li>
-                        <li> JavaScript</li>
-                        <li> JSON</li>
-                        <li> AJAX</li>
-                        <li> jQuery </li>
-                        <li> jQuery Mobile</li>
-                        <li> PHP </li>
-                        <li> Twig </li>
-                        <li> Scrum </li>
-                        <li> GIT </li>
-                        <li> Drupal </li>
-                        <li> WordPress </li>
-                     </ul>
-
+                    <!--<ul class="opsomming">-->
+                        <!--<li> HTML5 </li>-->
+                        <!--<li> CSS3 </li>-->
+                        <!--<li> Responsive Webdesign</li>-->
+                        <!--<li> Bootstrap </li>-->
+                        <!--<li> LESS</li>-->
+                        <!--<li> SASS</li>-->
+                        <!--<li> COMPASS</li>-->
+                        <!--<li> SQL </li>-->
+                        <!--<li> JavaScript</li>-->
+                        <!--<li> JSON</li>-->
+                        <!--<li> AJAX</li>-->
+                        <!--<li> jQuery </li>-->
+                        <!--<li> jQuery UI</li>-->
+                        <!-&#45;&#45;	jQuery Mobile-->
+                        <!-&#45;&#45;	PHP-->
+                        <!-&#45;&#45;	Twig-->
+                        <!-&#45;&#45;	Scrum-->
+                        <!-&#45;&#45;	GIT-->
+                        <!-&#45;&#45;	Drupal-->
+                        <!-&#45;&#45;	WordPress-->
 
 
 
@@ -265,7 +238,7 @@
 
 
     <!-- PORTFOLIO -->
-    <div id="portfolio" class="onder col s12">
+    <div id="portfolio" class="col s12">
         <div class="section white">
             <div class="row container">
                 <h2 class="header">Portfolio</h2>
@@ -359,12 +332,12 @@
 
         </div>
 
-        <div  class="section white">
-            <div id="contactBoks" class="row container">
+        <div class="section white">
+            <div class="row container">
                 <div class="row">
                     <div class="col s12 m6 l6">
                         <div class="row">
-
+                        <?php $thankYou ?>
                             <form method="post" action="contact.php">
                                 <div class="row">
                                     <div class="input-field col s6">
@@ -379,32 +352,20 @@
                                     </div>
                                 </div>
                                 <textarea class="materialize-textarea" placeholder="Your Message" name="cf_message" required></textarea>
-                                <button class="btn waves-effect waves-light" type="submit" name="submit" >Stuur Mail
+                                <button class="btn waves-effect waves-light" type="submit" name="submit" >Submit
                                     <i class="mdi-content-send right"></i>
                                 </button>
                             </form>
                         </div>
                     </div>
-                    <div class="col s12 m6 l6 contact-holder center">
+                    <div class="col s12 m6 l6 contact-holder">
                         <h6 class="mdi-action-home">Location</h6>
                         <p>België, Antwerpen</p>
                         <h6 class="mdi-communication-email">E-mail</h6>
-                        <a href="mailto:deschrijvervicky@hotmail.com"> Vicky Deschrijver</a>
+                        <a href="mailto:deschrijvervicky@hotmail.com" data-toggle="tooltip" data-placement="top" title="mail me!!" > deschrijvervicky@hotmail.com</a>
                         <h6 class="mdi-action-open-in-browser">Website</h6>
                         <a href="#"> http://itsallinthevix.wc.lt</a>
-                        <div class="row center" id="socialMedia">
-                                            <a href="https://be.linkedin.com/in/vickydeschrijver" class="cont tooltipped"  data-position="left" data-delay="50" data-tooltip="LinkedIn"> <img src="img/linkedin.png"/></a>
-                                            <a href="https://www.facebook.com/VixDeschrijver" class="cont tooltipped"  data-position="top" data-delay="50" data-tooltip="Facebook"> <img src="img/Facebook.png"/></a>
-                                            <a href="https://twitter.com/VixDeschrijver" class="cont tooltipped"  data-position="right" data-delay="50" data-tooltip="Twitter"> <img src="img/Twitter.png"/></a>
-                                        </div>
-                                        <div class="row center op">
-                                            <a href="https://instagram.com/vixdeschrijver/" class="cont tooltipped"  data-position="bottom" data-delay="50" data-tooltip="Instagram"> <img src="img/instagram.png"/></a>
-                                            <a href="https://www.pinterest.com/itsallinthevix" class="cont tooltipped"  data-position="bottom" data-delay="50" data-tooltip="Pinterest"> <img src="img/Pinterest.png"/></a>
-
-                                        </div>
                     </div>
-
-
                 </div>
             </div>
         </div>
@@ -417,16 +378,16 @@
 <aside class="contact" id="contact">
 
     <ul>
-        <li> <a href="mailto:deschrijvervicky@hotmail.com" > <img id="contacticon" src="img/email.png" alt="Stuur een email" class="tooltipped"  data-position="right" data-delay="50" data-tooltip="deschrijvervicky@hotmail.com" > </a></li>
-        <li> <a href="https://be.linkedin.com/in/vickydeschrijver" target="_blank"> <img id="contacticon" src="img/linkedin.png" alt="LinkedIn" class="tooltipped"  data-position="right" data-delay="50" data-tooltip="LinkedIn"> </a>
+        <li> <a href="mailto:deschrijvervicky@hotmail.com" > <img id="contacticon" src="img/email.png" alt="Stuur een email" class="btn tooltipped"  data-position="right" data-delay="50" data-tooltip="deschrijvervicky@hotmail.com" > </a></li>
+        <li> <a href="https://www.linkedin.com/profile/public-profile-settings?trk=prof-edit-edit-public_profile" target="_blank"> <img id="contacticon" src="img/linkedin.png" alt="LinkedIn" class="btn tooltipped"  data-position="right" data-delay="50" data-tooltip="LinkedIn"> </a>
         </li>
-        <li><a href="https://www.facebook.com/VixDeschrijver" target="_blank"> <img id="contacticon" src="img/Facebook.png" alt="Facebook" class="tooltipped"  data-position="right" data-delay="50" data-tooltip="Facebook"> </a>
+        <li><a href="https://www.facebook.com/VixDeschrijver" target="_blank"> <img id="contacticon" src="img/facebook.png" alt="Facebook" class="btn tooltipped"  data-position="right" data-delay="50" data-tooltip="Facebook"> </a>
         </li>
-        <li> <a href="https://twitter.com/VixDeschrijver" target="_blank"> <img id="contacticon" src="img/Twitter.png" alt="Twitter" class="tooltipped"  data-position="right" data-delay="50" data-tooltip="Twitter"> </a>
+        <li> <a href="https://twitter.com/VixDeschrijver" target="_blank"> <img id="contacticon" src="img/twitter.png" alt="Twitter" class="btn tooltipped"  data-position="right" data-delay="50" data-tooltip="Twitter"> </a>
         </li>
-        <li> <a href="https://instagram.com/vixdeschrijver/" target="_blank"> <img id="contacticon" src="img/instagram.png" alt="Instagram"  class="tooltipped"  data-position="right" data-delay="50" data-tooltip="Instagram"> </a>
+        <li> <a href="https://www.linkedin.com/profile/public-profile-settings?trk=prof-edit-edit-public_profile" target="_blank"> <img id="contacticon" src="img/instagram.png" alt="Instagram"  class="btn tooltipped"  data-position="right" data-delay="50" data-tooltip="Instagram"> </a>
         </li>
-        <li> <a href="https://www.pinterest.com/itsallinthevix" target="_blank"> <img id="contacticon" src="img/Pinterest.png" alt="Pinterest"  class="tooltipped"  data-position="right" data-delay="50" data-tooltip="Pinterest"> </a> </p>
+        <li> <a href="https://www.pinterest.com/itsallinthevix" target="_blank"> <img id="contacticon" src="img/pinterest.png" alt="Pinterest"  class="btn tooltipped"  data-position="right" data-delay="50" data-tooltip="Pinterest"> </a> </p>
         </li>
     </ul>
 
@@ -437,7 +398,8 @@
 
 <footer class="page-footer">
     <div class="container">
-        <a class="grey-text text-lighten-4 right tooltipped" href="mailto:deschrijvervicky@hotmail.com" data-position="top" data-delay="50" data-tooltip="mail me!!" > &copy; It's All in the Vix.!!! 2015 </a>
+        <p> &copy; It's All in the Vix.!!! 2015 </p>
+        <a class="grey-text text-lighten-4 right" href="mailto:deschrijvervicky@hotmail.com" data-toggle="tooltip" data-placement="top" title="mail me!!" > deschrijvervicky@hotmail.com</a>
     </div>
 
 </footer>
