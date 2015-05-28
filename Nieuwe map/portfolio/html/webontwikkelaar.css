@@ -1,0 +1,379 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* GENERAL */
+
+html,body{
+	margin:0 auto;
+	padding:0;
+	width:100%%;
+	font:small small Arial, sans-serif;
+	color:#665950;
+	min-width:470px;
+	background:#FCFAF8;
+}
+.container{ 
+	padding:0 10%;
+}
+
+	
+
+/*** LAY-OUT ***/
+/* Login */
+.login{
+	background:#8FB209;
+	color:#FCFAF8;
+	text-align:right;
+}
+
+#submit{
+	background:#6D8B06;
+	color:inherit;
+	font-size:inherit;
+	margin:0;
+	border:0;
+	display:inline;
+}
+
+
+	
+
+/* Logo */
+#logo{margin:1% 0 0 0;}
+
+/* Afbeeldingen */
+.img_R{
+	border:solid #DCDAD8;
+	transform:rotate(5deg);
+	box-shadow: rgba(0,0,0,0.2) 10px 10px;
+	
+	margin:2%;
+}
+.img_L{
+	border:solid #DCDAD8;
+	transform:rotate(-5deg);
+	box-shadow: rgba(0,0,0,0.2) 10px 10px;
+	border-radius:15% 10%;
+	margin:2%;
+}
+.team img{
+	width: 85%;
+}
+
+.team .img_R{
+	border-radius:10% 15%;
+	box-shadow: rgba(235,232,229,0.8) 10px 10px 30px 10px, rgba(105,91,82,0.90) 5px 5px 2.5px 5px;
+}
+.team .img_L{
+	border-radius:10% 15%;
+	box-shadow: rgba(235,232,229,0.8) 10px 10px 30px 10px, rgba(105,91,82,0.90) 5px 5px 2.5px 5px;
+}
+
+
+.kol_2>#img_mockup{
+	max-width:65%;
+}
+
+#img_phpcode{
+	float:right;
+	margin-top:2%;
+}
+#img_webdeveloper{
+	max-width:23%;
+	margin-right:8%;
+	margin-top:2%;
+	transform:skew(5deg, 10deg);
+}
+#img_groep{
+	float:right;
+	margin-right:5%;
+}
+
+/* Hoofdmenu */
+header{
+	border-bottom:groove #DCDAD8;}
+nav {float:right; display:inline-block;}
+nav ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+nav ul li {float:left;}
+nav ul li a{
+	color:#665950;
+	display:inline-block;
+	padding:0 10px 3px 10px
+}
+nav ul li a:hover, nav ul li a:active {
+	background:#EBE8E5;
+	color:#3E3630;
+}
+
+/* tekst */
+.tekst>img{
+	float:right;
+	max-width:30%;
+	border:solid #E9DCE9;
+	margin:1%;
+}
+
+/* grijs */
+.grijs{
+	background:#EBE8E5;
+	width:100%;
+	padding:0 0 5% 0;
+	border-bottom:double #E9DCE9;
+	border-top:double #E9DCE9;	
+}
+
+.grijs>div{
+	background:#EBE8E5;
+}
+
+.grijs>div>#img_home{
+	margin: -1% 1% 1% 1%;
+	float:left;	
+}
+
+
+/* Contact */
+.locatie{
+	float:left;
+	max-width:45%;
+	margin:0 2% 0 2%;
+	padding:0;
+}
+
+
+#contactinfo{
+	list-style:none;
+	padding:0;
+	margin-top:30%;
+}
+
+#gmap {
+    background-image: url("../img/gmap.png");
+	background-repeat:no-repeat;
+    border: 1px solid #dcdad8;
+    height: 600;
+    margin-bottom: 2%;
+    padding: 0 0 1%;
+    width: 90%;
+	
+}
+.imgBox {
+    width: 90%;
+	
+}
+
+.imgBox div {
+    border: 1px solid #dcdad8;
+    float: left;
+}
+.imgBox div:first-child {
+    background-image:url(../img/env1.jpg);
+	background-repeat:no-repeat;
+    height: 400;
+    margin: 0 2% 2% 0;
+    width: 46%;
+}
+.imgBox div:nth-child(2) {
+    background-image:url(../img/env4.jpg);
+	background-repeat:no-repeat;
+    height: 400;
+    margin: 0 0 2%;
+    width: 46%;
+}
+.imgBox div:nth-child(3) {
+    background-image:url(../img/env2.jpg);
+	background-repeat:no-repeat;
+    height: 170;
+    margin: 0 2% 0 0;
+    width: 30%;
+}
+.imgBox div:nth-child(4) {
+    background-image:url(../img/env3.jpg);
+	background-repeat:no-repeat;
+    height: 170;
+    width: 62%;}
+
+
+/*lijstje startpagina */
+.lijst{
+	list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lijst li {
+	list-style: outside url(../img/check.png) ;
+	float:left;
+	width:27%;
+	margin-right:2%;
+	margin:0 2%;
+	height:100px;
+}
+
+
+/* kolommen */
+.kolommen {
+	padding-bottom:5%;
+	border-bottom:double #DCDAD8;	
+}
+
+.kol{
+	float:left;
+	width:32%;
+	margin-right:1%;
+}
+
+.kol_3>img{
+	float:right;
+	max-width:25%;
+}
+
+
+
+
+/* Footer */
+footer{
+	border-top:thin groove #DCDAD8;}
+
+/* team */
+.team{
+	padding:0;
+	margin:1% 0;
+	list-style:none;
+	float:left;
+}
+.team li{
+	float: left;
+	margin: 0 5%;
+	padding: 0;
+	text-align: left;
+	width:15%;
+}
+
+/*portfoliolijst */
+.portfoliolijst{
+	list-style:none;
+	text-decoration:none;
+}
+.portfoliolijst ul{
+	list-style:none;
+	text-decoration:none;
+}
+
+
+
+
+/*** TYPOGRAFIE ***/
+
+a{
+	text-decoration:none;
+	color:#4C86CF;
+	font-weight:bold;
+}
+
+
+.team li:nth-child(2n+1) {
+    text-align: right;
+}
+
+h1 {
+	font-size:xx-large; }
+h2 {
+	font-size:large;
+	font-weight:bold;
+}
+h3 {
+	
+	font-size:larger;
+	font-weight:bold;
+	margin:0;
+}
+.formulier h3{ margin:1% 0;}
+.contact h1{color:#9A3098;}
+
+h1, h2 {
+	margin:2% 0 2% 0;
+	padding:0;
+}
+
+article > h2:first-child, article > h1:nth-child(2), aside h1, aside h2, article h1{
+	color:#7ea107;
+	font-weight:bold;
+	font-family: 'Yanone Kaffeesatz', sans-serif; 
+}
+.boven h2{
+	font-style:italic;
+}
+em{
+	color:#9A3098;
+	font-weight:bold;
+	font-style:normal;
+}
+#inleiding{
+	letter-spacing:1px;
+}
+.kol>p {
+	font-variant:small-caps;
+	font-size:xx-small;
+	margin:0;
+	padding:0;
+}
+
+small{
+	font-size:70%;
+}
+
+footer:last-child{
+	font-style:italic;
+}
+code{
+	color:#8B1C00;
+	font-weight:bold;
+	letter-spacing:1px;
+}
+#deel_team{
+	color:#9A309A;
+}
+
+.team li h3{
+	color:#665950;
+		
+}
+
+.team li a .img_L{
+	text-align:right;
+}
+#contact_titel{
+	margin:1% 0;
+}
+
+
+
+/*clearfix */
+.clearfix:before, .clearfix:after {
+	content:" ";
+	display:table;
+}
+.clearfix:after{
+	clear:both;
+}
+/*enkel voor IE6/7 */
+.clearfix {*zoom: 1;}
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+/* div, aside, article, header, footer, ul, li{outline:1px dashed red;} */

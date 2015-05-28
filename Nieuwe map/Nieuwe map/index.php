@@ -1,3 +1,5 @@
+
+
 <!doctype html>
 <html>
 <head>
@@ -59,7 +61,6 @@
 </script>
 
 
-
     <title>It's All in the Vix.!!!</title>
 </head>
 
@@ -83,8 +84,7 @@
         </nav>
     </div>
 
-
-    <!-- start tabs -->
+<!-- start tabs -->
     <div class="container">
     <!-- HOME -->
     <div id="home" class="onder col s12">
@@ -326,7 +326,7 @@
     </div>
 
     <!-- CONTACT -->
-    <div id="contact" class="onder col s12">
+    <div id="contact" class="col s12">
         <div class="section white">
             <div class="row container">
                 <h2 class="header">Contact</h2>
@@ -342,47 +342,73 @@
 
         <div class="section white">
             <div class="row container">
-                <div class="col s12 m6 l4 contact-holder">
-                    <h6 class="mdi-action-home">Location</h6>
-                    <p>België, Antwerpen</p>
-                    <h6 class="mdi-communication-email">E-mail</h6>
-                    <a href="mailto:deschrijvervicky@hotmail.com" data-toggle="tooltip" data-placement="top" title="mail me!!" > deschrijvervicky@hotmail.com</a>
-                    <h6 class="mdi-action-open-in-browser">Website</h6>
-                    <a href="#"> http://itsallinthevix.wc.lt</a>
-                </div>
-                <div class="col s12 m6 l8 contact-holder right">
-                    <div class="row center">
-                        <a href="#" class="cont tooltipped"  data-position="left" data-delay="50" data-tooltip="LinkedIn"> <img src="img/linkedin.png"/></a>
-                        <a href="#" class="cont tooltipped"  data-position="top" data-delay="50" data-tooltip="Facebook"> <img src="img/Facebook.png"/></a>
-                        <a href="#" class="cont tooltipped"  data-position="right" data-delay="50" data-tooltip="Twitter"> <img src="img/Twitter.png"/></a>
-                    </div>
-                    <div class="row center op">
-                        <a href="#" class="cont tooltipped"  data-position="bottom" data-delay="50" data-tooltip="Instagram"> <img src="img/instagram.png"/></a>
-                        <a href="#" class="cont tooltipped"  data-position="bottom" data-delay="50" data-tooltip="Pinterest"> <img src="img/Pinterest.png"/></a>
+                <div class="row">
+                    <div class="col s12 m6 l6">
+                        <div class="row">
 
+                            <form method="post" action="contact.php">
+                                <div class="row">
+                                    <div class="input-field col s6">
+                                        <input id="name" name="cf_name" type="text" class="validate">
+                                        <label for="name">Naam</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <input id="email" name="cf_email" type="email" class="validate">
+                                        <label for="email">E-Mail</label>
+                                    </div>
+                                </div>
+                                <textarea class="materialize-textarea" placeholder="Your Message" name="cf_message" required></textarea>
+                                <button class="btn waves-effect waves-light" type="submit" name="submit" >Submit
+                                    <i class="mdi-content-send right"></i>
+                                </button>
+                            </form>
+                        </div>
                     </div>
-                </div>
+                    <div class="col s12 m6 l6 contact-holder">
+                        <h6 class="mdi-action-home">Location</h6>
+                        <p>België, Antwerpen</p>
+                        <h6 class="mdi-communication-email">E-mail</h6>
+                        <a href="mailto:deschrijvervicky@hotmail.com" data-toggle="tooltip" data-placement="top" title="mail me!!" > deschrijvervicky@hotmail.com</a>
+                        <h6 class="mdi-action-open-in-browser">Website</h6>
+                        <a href="#"> http://itsallinthevix.wc.lt</a>
+                    </div>
+                     <div class="col s12 m6 l8 contact-holder right">
+                                        <div class="row center">
+                                            <a href="#" class="cont tooltipped"  data-position="left" data-delay="50" data-tooltip="LinkedIn"> <img src="img/linkedin.png"/></a>
+                                            <a href="#" class="cont tooltipped"  data-position="top" data-delay="50" data-tooltip="Facebook"> <img src="img/Facebook.png"/></a>
+                                            <a href="#" class="cont tooltipped"  data-position="right" data-delay="50" data-tooltip="Twitter"> <img src="img/Twitter.png"/></a>
+                                        </div>
+                                        <div class="row center op">
+                                            <a href="#" class="cont tooltipped"  data-position="bottom" data-delay="50" data-tooltip="Instagram"> <img src="img/instagram.png"/></a>
+                                            <a href="#" class="cont tooltipped"  data-position="bottom" data-delay="50" data-tooltip="Pinterest"> <img src="img/Pinterest.png"/></a>
 
+                                        </div>
+                                    </div>
+
+                </div>
             </div>
         </div>
     </div>
 
-    </div>
 
+
+    </div>
 
 <aside class="contact" id="contact">
 
     <ul>
-        <li> <a href="mailto:deschrijvervicky@hotmail.com" > <img id="contacticon" src="img/email.png" alt="Stuur een email" class=" tooltipped"  data-position="right" data-delay="50" data-tooltip="deschrijvervicky@hotmail.com" > </a></li>
-        <li> <a href="https://www.linkedin.com/profile/public-profile-settings?trk=prof-edit-edit-public_profile" target="_blank"> <img id="contacticon" src="img/linkedin.png" alt="LinkedIn" class=" tooltipped"  data-position="right" data-delay="50" data-tooltip="LinkedIn"> </a>
+        <li> <a href="mailto:deschrijvervicky@hotmail.com" > <img id="contacticon" src="img/email.png" alt="Stuur een email" class="btn tooltipped"  data-position="right" data-delay="50" data-tooltip="deschrijvervicky@hotmail.com" > </a></li>
+        <li> <a href="https://www.linkedin.com/profile/public-profile-settings?trk=prof-edit-edit-public_profile" target="_blank"> <img id="contacticon" src="img/linkedin.png" alt="LinkedIn" class="btn tooltipped"  data-position="right" data-delay="50" data-tooltip="LinkedIn"> </a>
         </li>
-        <li><a href="https://www.facebook.com/VixDeschrijver" target="_blank"> <img id="contacticon" src="img/Facebook.png" alt="Facebook" class=" tooltipped"  data-position="right" data-delay="50" data-tooltip="Facebook"> </a>
+        <li><a href="https://www.facebook.com/VixDeschrijver" target="_blank"> <img id="contacticon" src="img/facebook.png" alt="Facebook" class="btn tooltipped"  data-position="right" data-delay="50" data-tooltip="Facebook"> </a>
         </li>
-        <li> <a href="https://twitter.com/VixDeschrijver" target="_blank"> <img id="contacticon" src="img/Twitter.png" alt="Twitter" class=" tooltipped"  data-position="right" data-delay="50" data-tooltip="Twitter"> </a>
+        <li> <a href="https://twitter.com/VixDeschrijver" target="_blank"> <img id="contacticon" src="img/twitter.png" alt="Twitter" class="btn tooltipped"  data-position="right" data-delay="50" data-tooltip="Twitter"> </a>
         </li>
-        <li> <a href="https://www.linkedin.com/profile/public-profile-settings?trk=prof-edit-edit-public_profile" target="_blank"> <img id="contacticon" src="img/instagram.png" alt="Instagram"  class=" tooltipped"  data-position="right" data-delay="50" data-tooltip="Instagram"> </a>
+        <li> <a href="https://www.linkedin.com/profile/public-profile-settings?trk=prof-edit-edit-public_profile" target="_blank"> <img id="contacticon" src="img/instagram.png" alt="Instagram"  class="btn tooltipped"  data-position="right" data-delay="50" data-tooltip="Instagram"> </a>
         </li>
-        <li> <a href="https://www.pinterest.com/itsallinthevix" target="_blank"> <img id="contacticon" src="img/Pinterest.png" alt="Pinterest"  class=" tooltipped"  data-position="right" data-delay="50" data-tooltip="Pinterest"> </a> </p>
+        <li> <a href="https://www.pinterest.com/itsallinthevix" target="_blank"> <img id="contacticon" src="img/pinterest.png" alt="Pinterest"  class="btn tooltipped"  data-position="right" data-delay="50" data-tooltip="Pinterest"> </a> </p>
         </li>
     </ul>
 
@@ -392,12 +418,11 @@
 
 
 <footer class="page-footer">
-    <!--<div class="footer-copyright">-->
-    <div class="container footer-copyright">
-        &copy; It's All in the Vix.!!! 2015
-        <a class="grey-text text-lighten-4 right" href="mailto:deschrijvervicky@hotmail.com" class=" tooltipped"  data-position="top" data-delay="50" data-tooltip="mail me!!" > deschrijvervicky@hotmail.com</a>
+    <div class="container">
+        <p> &copy; It's All in the Vix.!!! 2015 </p>
+        <a class="grey-text text-lighten-4 right" href="mailto:deschrijvervicky@hotmail.com" data-toggle="tooltip" data-placement="top" title="mail me!!" > deschrijvervicky@hotmail.com</a>
     </div>
-    <!--</div>-->
+
 </footer>
 
 
