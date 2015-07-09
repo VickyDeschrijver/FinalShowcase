@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+@media print {
+body {
+	font:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	font-size:18px;}
+div {
+	display:block !important;}
+#menu { display:none !important;}
+img {display:none !important;}
+.opsomming {display:none;}
+#portfolio {display:none !important;}
+  
+ }

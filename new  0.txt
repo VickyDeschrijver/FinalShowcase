@@ -1,0 +1,27 @@
+﻿  
+
+  
+  
+  .parallax-container {display:none !important;}
+  .fixed-action-btn{display:none !important;}
+  .section-white {padding:0 !important;}
+  #cv {display:none;}
+  #portfolio {display:none !important;}
+  form {display:none !important;}
+  h6 {font-size:18px;}
+  h6>p {margin:0 !important;}
+  a:link:after { content:" (" attr(href) ") ";}
+  
+
+
+.nav-wrapper { display:none;}
+  aside {display:none !important;}
+  #socialMedia a{float:left;}
+
+blockquote, .auteur { display:none;}
+fixed-action-btn { display: none;}
+img {display:none;}
+.parpic {display:none;}
+footer {display:none;}	
+.opsomming {display:none;}
+#portfolio {display:none;}
